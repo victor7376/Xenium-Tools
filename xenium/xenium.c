@@ -133,6 +133,16 @@ uint8_t xenium_is_detected()
     {
         return 1;
     }
+	else if (manuf == XENIUM_MANUF_ID_MX &&
+	         devid == XENIUM_DEVICE_ID_MX)
+	{
+		return 1;
+	}
+	else if (manuf == XENIUM_MANUF_ID_MX &&
+	         devid == XENIUM_DEVICE_ID)
+	{
+		return 1;
+	}
     return 0;
 }
 
